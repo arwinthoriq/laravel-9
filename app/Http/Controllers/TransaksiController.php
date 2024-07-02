@@ -35,8 +35,6 @@ class TransaksiController extends Controller
          Transaksi::create([
             'user_id' => Auth()->id(),
             'product_id' => Session::get('id_session'),
-         //'user_id' => Auth()->id(),
-         //'product_id' => Session::get('id_session'),
          ]);
      
        //  Product::create($request->all());
